@@ -1131,6 +1131,18 @@
         <y>center</y>
       </position>
     </application>
+
+  <application role="GtkFileChooserDialog">
+      <position force="yes">
+          <x>center</x>
+          <y>center</y>
+      </position>
+
+      <size>
+          <width>1400</width>
+          <height>900</height>
+      </size>
+  </application>
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
