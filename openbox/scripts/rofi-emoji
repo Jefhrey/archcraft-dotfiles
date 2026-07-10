@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+LAUNCHER="$HOME/.config/openbox/scripts/rofi-launcher"
+
+STYLE=$(grep '^STYLE=' "$LAUNCHER" | cut -d'"' -f2)
+
+DIR="$HOME/.config/openbox"
+RASI="$DIR/themes/$STYLE/rofi/launcher.rasi"
+
+rofi -show emoji -theme "$RASI"
