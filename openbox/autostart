@@ -25,6 +25,8 @@ exec picom &
 ## Launch Polybar or Tint2
 bash ~/.config/openbox/themes/launch-bar.sh
 
+## Clipboard managar
+copyq &
 ## Notification Daemon
 exec dunst &
 
@@ -49,4 +51,6 @@ exec thunar --daemon &
 
 ## User Friendly Bluetooth Menu
 #blueman-applet &
+
+kitty -e sh -c 'eval "$(ssh-agent -s)"; ssh-add ~/.ssh/id_ed25519'
 

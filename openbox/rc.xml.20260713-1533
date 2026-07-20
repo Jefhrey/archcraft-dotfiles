@@ -626,11 +626,6 @@
         <command>ob-screenshot --now</command>
       </action>
     </keybind>
-    <keybind key="W-v">
-      <action name="Execute">
-        <command>copyq toggle</command>
-      </action>
-    </keybind>
     <keybind key="A-Print">
       <action name="Execute">
         <command>ob-screenshot --in5</command>
