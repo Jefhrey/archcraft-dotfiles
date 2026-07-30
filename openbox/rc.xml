@@ -737,7 +737,6 @@
         <command>rofi -show drun -theme ~/.config/openbox/themes/red/rofi/launcher.rasi</command>
       </action>
     </keybind> -->
-
     <keybind key="A-space">
       <action name="Execute">
         <command>rofi-launcher</command>
@@ -1136,18 +1135,16 @@
         <y>center</y>
       </position>
     </application>
-
-  <application role="GtkFileChooserDialog">
+    <application role="GtkFileChooserDialog">
       <position force="yes">
-          <x>center</x>
-          <y>center</y>
+        <x>center</x>
+        <y>center</y>
       </position>
-
       <size>
-          <width>1400</width>
-          <height>900</height>
+        <width>1400</width>
+        <height>900</height>
       </size>
-  </application>
+    </application>
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.

@@ -45,7 +45,8 @@ dec_volume() {
 
 # Toggle Mute
 toggle_mute() {
-	pulsemixer --toggle-mute
+	#pulsemixer --toggle-mute
+	pavucontrol
 }
 
 # Toggle Mic

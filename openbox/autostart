@@ -52,5 +52,5 @@ exec thunar --daemon &
 ## User Friendly Bluetooth Menu
 #blueman-applet &
 
-kitty -e sh -c 'eval "$(ssh-agent -s)"; ssh-add ~/.ssh/id_ed25519'
+#kitty -e sh -c 'eval "$(ssh-agent -s)"; ssh-add ~/.ssh/id_ed25519'
 
