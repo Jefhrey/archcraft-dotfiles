@@ -45,7 +45,13 @@ inc_backlight() {
 
 # Decrease brightness
 dec_backlight() {
-	light -U 5
+    current=$(printf "%.0f\n" "$(light -G)")
+
+    if (( current > 5 )); then
+        amount=$(( current - 5 ))
+        (( amount > 5 )) && amount=5
+        light -U "$amount"
+    fi
 }
 
 # Execute accordingly

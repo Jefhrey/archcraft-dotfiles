@@ -5,11 +5,11 @@
 #-------------------------------------
 # Backgrounds
 # Background 1: Panel, Tooltip
-rounded = 0
+rounded = 20
 border_width = 0
 border_sides = TBLR
 border_content_tint_weight = 0
-background_content_tint_weight = 0
+background_content_tint_weight = 10
 background_color = #1e222a 100
 border_color = #000000 0
 background_color_hover = #000000 0
@@ -72,10 +72,11 @@ border_color_pressed = #000000 0
 #-------------------------------------
 # Panel
 #panel_items = PTSEEEEEC
-panel_items = TEEEEESC
-panel_size = 100% 38
-panel_margin = 0 0
-panel_padding = 6 6 6
+panel_items = TCEEEEEE
+#panel_items = EEEEESC
+panel_size = 97.5% 38
+panel_margin = 0 6.5
+panel_padding = 10 8 12
 panel_background_id = 1
 wm_menu = 1
 panel_dock = 0
@@ -151,7 +152,7 @@ mouse_scroll_down = iconify
 #-------------------------------------
 # System tray (notification area)
 systray_padding = 10 0 8
-systray_background_id = 3
+systray_background_id = 2
 systray_sort = right2left
 systray_icon_size = 16
 systray_icon_asb = 100 0 0
@@ -175,14 +176,14 @@ launcher_item_app = /usr/share/applications/geany.desktop
 
 #-------------------------------------
 # Clock
-time1_format = %I:%M %p
+time1_format = %I:%M
 time2_format = 
-time1_font = JetBrains Mono Bold 15
+time1_font = JetBrains Mono Bold 14
 time1_timezone = 
 time2_timezone = 
 clock_font_color = #ffffff 100
-clock_padding = 0 0
-clock_background_id = 0
+clock_padding = 4 8
+clock_background_id = 1
 clock_tooltip = %A, %d %B %Y
 clock_tooltip_timezone = 
 clock_lclick_command = 
@@ -232,6 +233,7 @@ ac_connected_cmd = dunstify -u low -h string:x-dunst-stack-tag:tint2 'Charger Pl
 ac_disconnected_cmd = dunstify -u low -h string:x-dunst-stack-tag:tint2 'Charger Unplugged!'
 
 #-------------------------------------
+
 # Executor 1
 execp = new
 execp_command = tint2-volume
@@ -342,6 +344,36 @@ execp_monitor = all
 execp_tooltip = Memory
 #execp_lclick_command = xfce4-power-manager-settings
 #execp_rclick_command = xfce4-power-manager-settings
+execp_lclick_command = kitty btop
+execp_mclick_command = 
+execp_uwheel_command = 
+execp_dwheel_command = 
+execp_font = JetBrains Mono 15
+execp_font_color = #ffffff 100
+execp_padding = 10 0
+execp_background_id = 2
+execp_centered = 0
+execp_icon_w = 0
+execp_icon_h = 0
+
+#-------------------------------------
+# Executor 6
+execp = new
+#execp_command = tint2-battery
+execp_command = jef-battery
+#execp_command = awk "/MemTotal:/ {t=\$2} /MemAvailable:/ {a=\$2} END {printf \"<span foreground='#ffcd4d'></span> %.0f%%\\n\", (t-a)/t*100}" /proc/meminfo
+#<span foreground='#4dd5ff'>󰍛</span>
+execp_interval = 3
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 1
+execp_monitor = all
+#execp_tooltip = Battery
+#execp_tooltip = jef-battery.sh -l
+# No tooltip -> prints stderr from execp command :3
+execp_lclick_command = xfce4-power-manager-settings
+execp_rclick_command = xfce4-power-manager-settings
 execp_mclick_command = 
 execp_uwheel_command = 
 execp_dwheel_command = 
