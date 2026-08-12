@@ -3,5 +3,5 @@
 /* Text Font */
 
 * {
-    font: "Iosevka 10";
+    font: "GTK-NoCSD: LibHandy not found, will try GModule. Sans Regular 12";
 }
