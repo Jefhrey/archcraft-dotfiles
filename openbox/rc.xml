@@ -98,7 +98,7 @@
   </margins>
   <!-- Dock -->
   <dock>
-    <position>Bottom</position>
+    <position>Floating</position>
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
@@ -1121,7 +1121,7 @@
   <applications>
     <application class="*">
       <focus>yes</focus>
-      <decor>yes</decor>
+      <decor>no</decor>
     </application>
     <application name="obconf">
       <position force="yes">
