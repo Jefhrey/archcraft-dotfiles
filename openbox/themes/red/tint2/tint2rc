@@ -72,7 +72,7 @@ border_color_pressed = #000000 0
 #-------------------------------------
 # Panel
 #panel_items = PTSEEEEEC
-panel_items = TCEEEEEE
+panel_items = TECEEEEEEE
 #panel_items = EEEEESC
 panel_size = 97.5% 38
 panel_margin = 0 6.5
@@ -233,6 +233,32 @@ ac_connected_cmd = dunstify -u low -h string:x-dunst-stack-tag:tint2 'Charger Pl
 ac_disconnected_cmd = dunstify -u low -h string:x-dunst-stack-tag:tint2 'Charger Unplugged!'
 
 #-------------------------------------
+
+#Space before the clock
+execp = new
+execp_command = printf ' '
+execp_interval = 0
+execp_has_icon = 0
+execp_markup = 0
+execp_font = JetBrains Mono 15
+execp_font_color = #ffffff 0
+execp_padding = 120 0
+execp_background_id = 0
+execp_centered = 0
+execp_tooltip =
+
+# Spacer after clock
+execp = new
+execp_command = printf ' '
+execp_interval = 0
+execp_has_icon = 0
+execp_markup = 0
+execp_font = JetBrains Mono 15
+execp_font_color = #ffffff 0
+execp_padding = 137 0
+execp_background_id = 0
+execp_centered = 0
+execp_tooltip = 
 
 # Executor 1
 execp = new
