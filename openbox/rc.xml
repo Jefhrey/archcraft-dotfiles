@@ -717,16 +717,16 @@
         <command>kitty</command>
       </action>
     </keybind>
-    <keybind key="W-S-Return">
-      <action name="Execute">
-        <command>kitty</command>
-      </action>
-    </keybind>
-    <keybind key="W-f">
-      <action name="Execute">
-        <command>thunar</command>
-      </action>
-    </keybind>
+    <!-- <keybind key="W-S-Return"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>kitty</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="W-f"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>thunar</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <keybind key="W-w">
       <action name="Execute">
         <command>firefox</command>
@@ -734,7 +734,7 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>geany</command>
+        <command>thunar</command>
       </action>
     </keybind>
     <!-- Rofi -->
@@ -790,26 +790,26 @@
       </action>
     </keybind>
     <!-- CLI Apps -->
-    <keybind key="C-A-t">
+    <!-- <keybind key="C-A-t"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>xfce4-terminal</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="C-A-v"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>alacritty -e vim</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <keybind key="C-A-y">
       <action name="Execute">
-        <command>xfce4-terminal</command>
+        <command>kitty -e yazi</command>
       </action>
     </keybind>
-    <keybind key="C-A-v">
-      <action name="Execute">
-        <command>alacritty -e vim</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-r">
-      <action name="Execute">
-        <command>kitty -e ranger</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-h">
-      <action name="Execute">
-        <command>kitty -e htop</command>
-      </action>
-    </keybind>
+    <!-- <keybind key="C-A-h"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>kitty -e htop</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <!-- Misc -->
     <keybind key="C-A-l">
       <action name="Execute">
