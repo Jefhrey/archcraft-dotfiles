@@ -40,7 +40,7 @@ mainbox {
     margin:                      0px;
     padding:                     20px;
     background-color:            transparent;
-    children:                    [ "inputbar", "message", "listview" ];
+    children:                    [ "inputbar", "listview" ];
 }
 
 /*****----- Inputbar -----*****/
