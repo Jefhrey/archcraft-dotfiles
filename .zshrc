@@ -155,7 +155,24 @@ alias gp='git push origin master'
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
+export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 eval "$(starship init zsh)"
+
+clean() {
+    export STARSHIP_CONFIG="$HOME/.config/starship-minimal.toml"
+}
+
+fancy() {
+    export STARSHIP_CONFIG="$HOME/.config/starship.toml"
+}
+
+testing() {
+    export STARSHIP_CONFIG="$HOME/dotfiles/experiment.toml"
+}
+
+coolBlue() {
+    export STARSHIP_CONFIG="$HOME/.config/starship-blue.toml"
+}
 
 
 pokeget random --hide-name
