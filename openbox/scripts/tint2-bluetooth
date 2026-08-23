@@ -45,17 +45,19 @@ print_status() {
                 device_alias=$(bluetoothctl info "$device" | grep "Alias" | cut -d ' ' -f 2-)
                 # getting battery percentage of the connected bluetooth device
 
-                # MAC=$(bluetoothctl devices Connected | awk '{print $2}')
-                # DEVICE_PATH="/org/bluez/hci0/dev_${MAC//:/_}"
+                MAC=$(bluetoothctl devices Connected | awk '{print $2}')
+                DEVICE_PATH="/org/bluez/hci0/dev_${MAC//:/_}"
 
-                # batteryPercentage=$(busctl get-property org.bluez "$DEVICE_PATH" org.bluez.Battery1 Percentage | awk '{print $2}')
+                batteryPercentage=$(busctl get-property org.bluez "$DEVICE_PATH" org.bluez.Battery1 Percentage | awk '{print $2}')
 
                 if [ $counter -gt 0 ]; then
                     # echo " $batteryPercentage%"
-                    echo ""
+                    echo "<span foreground = '#4dd5ff'> </span> $batteryPercentage%"
+                    # echo ""
                 else
                     # echo "  $batteryPercentage%"
-                    echo ""
+                    echo "<span foreground = '#4dd5ff'> </span> $batteryPercentage%"
+                    # echo ""
                 fi
 
                 ((counter++))
