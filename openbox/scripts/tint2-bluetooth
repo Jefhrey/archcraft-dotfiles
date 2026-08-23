@@ -28,7 +28,7 @@ device_connected() {
 print_status() {
     if power_on; then
 		if [[ -z `bluetoothctl info "$device" | grep "Alias" | cut -d ' ' -f 2-` ]]; then
-			echo "<span foreground = '#4dd5ff'></span> On"
+			echo "<span foreground = '#4dd5ff'>󰂯</span> On"
 		fi
 		
         paired_devices_cmd="devices Paired"
@@ -64,7 +64,7 @@ print_status() {
             fi
         done
     else
-        echo "<span foreground = '#4dd5ff'></span> Off"
+        echo "<span foreground = '#4dd5ff'>󰂯</span> Off"
     fi
 }
 
