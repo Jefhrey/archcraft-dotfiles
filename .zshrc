@@ -158,7 +158,7 @@ alias run-kernel='qemu-system-x86_64 -enable-kvm -kernel ~/Projects/linux/arch/x
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
-export STARSHIP_CONFIG="$HOME/.config/starship.toml"
+export STARSHIP_CONFIG="$HOME/.config/starship-blue.toml"
 eval "$(starship init zsh)"
 
 clean() {
