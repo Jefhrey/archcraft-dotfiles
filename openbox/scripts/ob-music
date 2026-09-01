@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
-kitty \
-    --class Music \
-    -o initial_window_width=105c \
-    -o initial_window_height=22c \
-    ~/.ncmpcpp/scripts/ncmpcpp-art
+# kitty \
+#     --class Music \
+#     -o initial_window_width=105c \
+#     -o initial_window_height=22c \
+#     ~/.ncmpcpp/scripts/ncmpcpp-art
+
+
+kitty -e rmpc
