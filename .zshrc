@@ -154,7 +154,7 @@ alias gp='git push origin master'
 
 #qemu
 
-alias run-kernel='qemu-system-x86_64 -enable-kvm -kernel ~/Projects/linux/arch/x86/boot/bzImage -drive file=$HOME/rootfs.img,format=raw,if=ide -append "root=/dev/sda console=ttyS0 rw" -nographic -m 2G'
+alias run-kernel='qemu-system-x86_64 -enable-kvm -kernel ~/Projects/linux/arch/x86/boot/bzImage -drive file=$HOME/temp/rootfs.img,format=raw,if=ide -append "root=/dev/sda console=ttyS0 rw" -nographic -m 2G'
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
@@ -179,3 +179,10 @@ coolBlue() {
 
 
 pokeget random --hide-name
+
+
+alias start-warp="sudo wg-quick up ~/temp/wgcf-profile.conf"
+
+alias stop-warp="sudo wg-quick down ~/temp/wgcf-profile.conf"
+
+alias check-warp="sudo wg show"
